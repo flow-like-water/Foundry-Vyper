@@ -1,13 +1,12 @@
 // SPDX-License-Identifier: WTFPL
 pragma solidity ^0.8.19;
 
+import {Test} from "forge-std/Test.sol";
+import {VyperDeployer} from "utils/VyperDeployer.sol";
+
 import {IERC20Extended} from "./interfaces/IERC20Extended.sol";
 
-import "../../lib/ds-test/test.sol";
 import "../../lib/utils/Console.sol";
-import "../../lib/utils/VyperDeployer.sol";
-
-import "../ISimpleStore.sol";
 
 contract SURGE is Test {
     string private constant _NAME = "MyToken";
